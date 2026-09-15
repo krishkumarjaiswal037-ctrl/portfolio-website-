@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Raksha Bandhan Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      width: 400px;
+      text-align: center;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .card h1 {
+      color: #d35400;
+      font-size: 28px;
+      margin-bottom: 10px;
+      animation: floatText 3s infinite ease-in-out;
+    }
+    .card p {
+      color: #555;
+      font-size: 16px;
+      margin: 10px 0;
+      animation: fadeIn 4s infinite alternate;
+    }
+    .rakhi {
+      width: 100px;
+      height: 100px;
+      background: radial-gradient(circle, #f39c12, #e67e22);
+      border-radius: 50%;
+      margin: 20px auto;
+      position: relative;
+      box-shadow: 0 0 20px #f39c12, 0 0 40px #e67e22;
+      animation: glow 2s infinite alternate;
+    }
+    .rakhi::before, .rakhi::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 200px;
+      height: 6px;
+      background: #e67e22;
+      transform: translateY(-50%);
+    }
+    .rakhi::before {
+      left: -200px;
+    }
+    .rakhi::after {
+      right: -200px;
+    }
+    .footer {
+      margin-top: 20px;
+      font-style: italic;
+      color: #c0392b;
+      animation: floatText 3s infinite ease-in-out;
+    }
+
+    /* Sparkles */
+    .sparkle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      animation: sparkleAnim 6s infinite;
+      opacity: 0.8;
+    }
+
+    /* Animations */
+    @keyframes glow {
+      from { box-shadow: 0 0 10px #f39c12; }
+      to { box-shadow: 0 0 30px #e67e22; }
+    }
+    @keyframes floatText {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0.5; }
+      to { opacity: 1; }
+    }
+    @keyframes sparkleAnim {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      50% { transform: translateY(-50px) scale(1.5); opacity: 0.5; }
+      100% { transform: translateY(-100px) scale(0.8); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🌸 Happy Raksha Bandhan 🌸</h1>
+    <div class="rakhi"></div>
+    <p>Celebrating the bond of love, care, and protection between brothers and sisters.</p>
+    <div class="footer">With love and blessings 💖</div>
+  </div>
+ 
+ 
+  <div class="sparkle" style="left:20%; top:90%; animation-delay:0s;"></div>
+  <div class="sparkle" style="left:40%; top:95%; animation-delay:1s;"></div>
+  <div class="sparkle" style="left:60%; top:92%; animation-delay:2s;"></div>
+  <div class="sparkle" style="left:80%; top:94%; animation-delay:3s;"></div>
+  <div class="sparkle" style="left:30%; top:97%; animation-delay:4s;"></div>
+
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html> 
+
+
+
+
